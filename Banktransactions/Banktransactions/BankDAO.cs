@@ -11,6 +11,9 @@ namespace Banktransactions
         QT_DELETE ,
         QT_ADD
     }
+    /// <summary>
+    /// This is the Singleton class for DAO.
+    /// </summary>
     public sealed class BankDAO
     {
         private static BankDAO _instance;
@@ -46,13 +49,13 @@ namespace Banktransactions
         /// Execute a string query and get his return.
         /// </summary>
         /// <param name="Query">String to query</param>
-        /// <returns>List of containg the result from query</returns>
-        public IList<String> ExecuteQuery(string Query)
+        /// <returns>List of contain the result from query</returns>
+        public IList<string> ExecuteQuery(string Query)
         {
             // Get connection from CDO
             // Execute query
             // Return List
-            IList<String> list = null;
+            IList<string> list = null;
             return list;
         }
 
